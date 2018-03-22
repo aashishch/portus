@@ -10,6 +10,8 @@
 #
 # Finally the script will start apache running Portus via mod_rails.
 
+config='/srv/Portus/config/config.yml'
+
 set -e
 
 setup_database() {
@@ -67,6 +69,7 @@ file_env() {
     fi
     export "$var"="$val"
     unset "$fileVar"
+    sed -i 's/\from: "portus@example.com"/from: "aashishch65@gmail.com"/g' $config
 }
 
 # Setup environment variables from secrets.
