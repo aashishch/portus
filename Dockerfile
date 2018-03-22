@@ -1,5 +1,5 @@
 FROM opensuse/portus:2.3
-MAINTAINER Shiva "shiva@gmail.com"
+MAINTAINER Aashish "aashish@gmail.com"
 ENV RAILS_SERVE_STATIC_FILES=true
 ENV PORTUS_SECRET_KEY_BASE='ap'
 ENV PORTUS_KEY_PATH='ap'
